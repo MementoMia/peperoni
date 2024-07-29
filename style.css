@@ -3,3 +3,78 @@
     margin: 0;
     box-sizing: border-box;
 }
+.container{
+    width: 1170px;
+    padding: 10px 15px;
+}
+
+.header-banner{
+    text-align: center;
+    color: orange;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px; 
+    background: url("../images/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding: 100px 100px ;
+}
+ section{
+    border: 1px solid red;
+ }
+
+ .cook-time__header {
+    display: inline-block;
+    font-size: 2.5em;
+    text-transform: none;
+    margin-right: 0.5em;
+ }
+
+ .cook-time__header {
+    display: inline-block;
+    font-size: 2.5em;
+    text-decoration: underline .75px;
+    font-style: italic;
+ }
+
+ .element__list dt{
+    text-decoration: underline .5px;
+ }
+
+ .element__list dt::after{
+    content: ":";
+ }
+.element__list dt, .element__list dd{
+    display: inline-block;
+}
+
+.cooking__process{
+    list-style-type: none;
+    list-style-position: inside;
+    counter-reset: number;
+}
+
+.cooking__step::before{
+    content: "шаг" counter(number);
+    counter-increment: number;
+    font-weight: bold;
+}
+
+.cooking-step__desc{
+    font-size: 1em;
+    display: inline-block;
+    margin-right: 20px;
+    max-width: calc(100%-560px);
+    vertical-align: top;
+}
+.cooking-step__img{
+    max-width: 400px;
+    float: right;
+    vertical-align: middle;
+}
+
+.cooking__note{
+    clear: both;
+}
